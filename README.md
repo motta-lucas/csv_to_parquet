@@ -31,6 +31,6 @@ csv_to_parque/
 └── README.md
 ```
 
-## 📃 Data
+## ::page_with_curl:: Data
 
 [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
