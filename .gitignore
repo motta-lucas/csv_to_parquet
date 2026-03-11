@@ -21,4 +21,5 @@ src/data/
 .DS_Store
 # Logs
 *.log
+*./logs
 
