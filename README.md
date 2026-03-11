@@ -14,19 +14,23 @@ Automated pipeline to convert CSV files into Parquet
 - ✅ **Bulk file conversion**: CSV → Parquet with optimized compression
 - ✅ **Optimized performance**: Using Polars for an optimized data processing
 - ✅ **Exploratory analysis**: Basic EDA scripts
+- ✅ **Structured logs**: Logs are propertly recorded on respective files. This way historic logs are saved and in case of any issue debugging is easier.
 
 ## 📁 Project strcuture
 
 ```bash
 csv_to_parque/
+├── logs/
 ├── src/                        # Source code
 │   └── csv_to_parquet/
-│       ├── init.py
-│       ├── convert_to_parquet.py   # CSV → Parquet
-│       └── eda.py                  # Basic EDA
-├── data/
-│   ├── raw/                    # CSVs originals (input)
-│   └── processed/              # Parquet files
+│   │   ├── init.py
+│   │   ├── convert_to_parquet.py   # CSV → Parquet
+│   │   └── eda.py                  # Basic EDA
+│   └── data/
+│   │   ├── raw/                    # CSVs originals (input)
+│   │   └── processed/              # Parquet files
+│   └── data_utils/                 # Support modules
+│       └── log_config.py           # Configure log files
 ├── pyproject.toml              # Configurations and dependencies
 └── README.md
 ```
